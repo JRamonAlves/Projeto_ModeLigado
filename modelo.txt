@@ -1,0 +1,30 @@
+Main
+---
+---
+---
+
+BEP
+association Main
+association Avaliacao
+composes Bordado
+composes Compra
+---
+---
+---
+
+Bordado
+composes Avaliacao
+---
+---
+---
+
+Compra
+composes Bordado
+---
+---
+---
+
+Avaliacao
+---
+---
+---
