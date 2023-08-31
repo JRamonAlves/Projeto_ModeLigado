@@ -5,7 +5,6 @@ Main
 
 BEP
 association Main
-association Avaliacao
 composes Bordado
 composes Compra
 ---
