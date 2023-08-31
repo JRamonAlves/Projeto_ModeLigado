@@ -10,6 +10,7 @@ composes Compra
 ---
 - bordados: Bordado[]
 - compras: Compra[]
+- contCompra: int
 ---
 + BEP()
 + acharAcao(acao: String): boolean
@@ -19,6 +20,11 @@ composes Compra
 + imprimeBordado(iBordado: int): void
 + listaBordados(): String
 + alteraTamanhoBordado(iBordado: int, nLinhas: int, nColunas: int): void
++ cadastraCompra(iBordados: String): void
++ imprimeCompra(iCompra: int): void
++ avaliarBordado(iBordado: int, textoAvaliacao: String, nota: int): void
++ notaGeralBordado(iBordado: int): int
++ listarAvaliacoes(iBordado: int): String
 ---
 
 Bordado
