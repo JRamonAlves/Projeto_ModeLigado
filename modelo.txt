@@ -30,13 +30,25 @@ composes Compra
 Bordado
 composes Avaliacao
 ---
+- avaliacoes: Avaliacao[]
+- matriz: String[][]
+- preco: int
 ---
++ Bordado(linhas: int, colunas: int)
++ atualizaNo(linha: int, colunas: int): void
++ toString(): String
++ AlterarTamanho(linhas: int, colunas: int): void
 ---
 
 Compra
 composes Bordado
 ---
+- bordados: Bordado[]
+- preco: int
+- numero: int
 ---
++ Compra(bordados: String)
++ toString(): String
 ---
 
 Avaliacao
