@@ -8,7 +8,17 @@ association Main
 composes Bordado
 composes Compra
 ---
+- bordados: Bordado[]
+- compras: Compra[]
 ---
++ BEP()
++ acharAcao(acao: String): boolean
++ menu(): String
++ cadastraBordado(iBoradado: int, nLinhas: int, nColunas: int): void
++ atualizaBordado(iBordado: int, no: String, nLinha: int, n Coluna: int): void
++ imprimeBordado(iBordado: int): void
++ listaBordados(): String
++ alteraTamanhoBordado(iBordado: int, nLinhas: int, nColunas: int): void
 ---
 
 Bordado
@@ -25,5 +35,11 @@ composes Bordado
 
 Avaliacao
 ---
+- nota: int
+- texto: String
 ---
++ Avaliacao(nota: int, texto: String)
++ getNota(): int
++ getTexto(): String
++ toString(): String
 ---
