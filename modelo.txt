@@ -51,7 +51,7 @@ composes Bordado
 + toString(): String
 ---
 
-Avaliacao
+Avaliacao 
 ---
 - nota: int
 - texto: String
