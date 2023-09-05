@@ -41,7 +41,7 @@ composes Avaliacao
 + toString(): String
 + alterarTamanho(linhas: int, colunas: int): void
 + cadastraAvaliacao(texto: String, nota: int): void
-+ PegaPreco(): int
++ pegaPreco(): int
 + pegaAvaliacoes(): String[]
 + pegaNotaGeral(): double
 
