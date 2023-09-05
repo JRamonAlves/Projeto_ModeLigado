@@ -20,7 +20,7 @@ composes Compra
 + imprimeBordado(iBordado: int): void
 + listaBordados(): String
 + alteraTamanhoBordado(iBordado: int, nLinhas: int, nColunas: int): void
-+ cadastraCompra(iBordados: String): void
++ cadastraCompra(iBordados: String): int
 + imprimeCompra(iCompra: int): void
 + avaliarBordado(iBordado: int, textoAvaliacao: String, nota: int): void
 + notaGeralBordado(iBordado: int): int
