@@ -15,7 +15,7 @@ composes Compra
 + BEP()
 + acharAcao(acao: String): boolean
 + menu(): String
-+ cadastraBordado(iBoradado: int, nLinhas: int, nColunas: int): void
++ cadastraBordado(iBoradado: int, nLinhas: int, nColunas: int, preco: float): void
 + atualizaBordado(iBordado: int, no: String, nLinha: int, n Coluna: int): void
 + imprimeBordado(iBordado: int): void
 + listaBordados(): String
@@ -31,23 +31,29 @@ Bordado
 composes Avaliacao
 ---
 - avaliacoes: Avaliacao[]
+- iAvaliacao: int
 - matriz: String[][]
 - preco: int
+- notaGeral: double
 ---
-+ Bordado(linhas: int, colunas: int)
-+ atualizaNo(linha: int, colunas: int): void
++ Bordado(linhas: int, colunas: int, preco: double)
++ atualizaNo(no: String, linha: int, colunas: int): void
 + toString(): String
-+ AlterarTamanho(linhas: int, colunas: int): void
++ alterarTamanho(linhas: int, colunas: int): void
++ cadastraAvaliacao(texto: String, nota: int): void
++ PegaPreco(): int
++ pegaAvaliacoes(): String[]
++ pegaNotaGeral(): double
+
 ---
 
 Compra
-composes Bordado
+association Bordado
 ---
 - bordados: Bordado[]
 - preco: int
-- numero: int
 ---
-+ Compra(bordados: String)
++ Compra(bordados: Bordado[])
 + toString(): String
 ---
 
